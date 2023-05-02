@@ -1,0 +1,148 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 1rem;
+  padding: 1rem; 
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  max-width: 1200px;
+}
+/**************************/
+/*******   header   *******/
+/**************************/
+
+.header {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  background-color: #2d4059;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  flex: 1;
+  background-color: #ea5455;
+}
+
+.links {
+  flex: 5;
+  background-color: #ea5455;
+}
+
+.rrss {
+  flex: 1;
+  background-color: #ea5455;
+}
+
+.hero {
+  background-color: #ff6347;
+}
+
+.hero-1 {
+  background-color: #ffd460;
+}
+/**************************/
+/*******   main   *********/
+/**************************/
+
+.main {
+  background-color: black;
+  display: flex;
+}
+
+.section {
+  background-color: #4e4e6a;
+  flex: 2;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.article {
+  flex: 1 1 40%;
+  background-color: #1f6cb0;
+}
+
+.articleSota {
+  flex: 1 1 100%;
+  background-color: #70a3c4;
+}
+
+.aside {
+  flex: 1;
+  background-color: #f73f52;
+}
+
+.aside-1,
+.aside-2 {
+  background-color: #ffea85;
+}
+
+/**************************/
+/*******   footer   *******/
+/**************************/
+
+.footer {
+  background-color: black;
+}
+
+.footer-1 {
+  background-color: #f3b249;
+  color: black;
+}
+
+@media (max-width: 768px) {
+
+  .main {
+    background-color: rgb(244, 244, 118);
+    flex-flow: column wrap;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .nav {
+    flex-flow: column wrap;
+    align-items: stretch;
+  }
+
+  .logo {
+    flex: 1 1 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .links {
+    flex: 1 1 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .rrss {
+    flex: 1 1 100%
+  }
+
+  .main {
+    background-color: rgb(244, 244, 118);
+    flex-flow: column wrap;
+  }
+
+  .section {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+}
+
+
